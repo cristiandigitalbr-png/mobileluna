@@ -275,10 +275,10 @@
     /* ===== POR QUE ===== */
     .porque { background: var(--bg2); }
     .porque-grid {
-      display:grid; grid-template-columns: 1fr 1fr;
+      display:grid; grid-template-columns: 1fr;
       gap:48px; align-items:center;
     }
-    .porque-list { display:flex; flex-direction:column; gap:20px; }
+    .porque-list { display:grid; grid-template-columns: repeat(2,1fr); gap:20px; }
     .porque-item {
       display:flex; align-items:flex-start; gap:16px;
       padding:20px; background:var(--bg3);
@@ -470,11 +470,7 @@
 <!-- STATS -->
 <div class="stats">
   <div class="container">
-    <div class="stats-grid">
-      <div class="reveal">
-        <div class="stat-num">$0</div>
-        <div class="stat-label">Experiencia previa requerida</div>
-      </div>
+    <div class="stats-grid" style="grid-template-columns: repeat(2,1fr); max-width:500px; margin:0 auto;">
       <div class="reveal">
         <div class="stat-num">100%</div>
         <div class="stat-label">Clases prácticas</div>
@@ -482,10 +478,6 @@
       <div class="reveal">
         <div class="stat-num">MES 1</div>
         <div class="stat-label">Ya podés generar ganancias</div>
-      </div>
-      <div class="reveal">
-        <div class="stat-num">∞</div>
-        <div class="stat-label">Todos tienen celular. Todos se rompen.</div>
       </div>
     </div>
   </div>
@@ -611,11 +603,6 @@
           </div>
         </div>
       </div>
-      <div class="porque-visual reveal">
-        <div class="big-num">6.000M</div>
-        <p>smartphones activos en el mundo.</p>
-        <p style="margin-top:20px;font-size:1.2rem;font-weight:700;color:var(--yellow);">El mercado de reparación de celulares no para de crecer.</p>
-        <p style="margin-top:12px;">Cada celular reparado puede dejarte ganancias desde el primer mes.</p>
       </div>
     </div>
   </div>
